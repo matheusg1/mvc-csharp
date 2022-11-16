@@ -33,6 +33,7 @@ namespace Alura.ListaLeitura.App
             }
             else
             {
+                context.Response.StatusCode = 404;
                 return context.Response.WriteAsync("Caminho inexistente");
             }
         }
