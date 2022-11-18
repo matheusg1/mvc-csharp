@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App.Logica
 {
-    public class LivrosLogica
+    public class LivrosController
     {
         private static string CarregaLista(IEnumerable<Livro> livros)
         {
@@ -26,7 +26,7 @@ namespace Alura.ListaLeitura.App.Logica
 
         }
 
-        public static Task ExibeDetalhes(HttpContext context)
+        public static Task Detalhes(HttpContext context)
         {
             int id = Convert.ToInt32(context.GetRouteValue("id"));
             var repo = new LivroRepositorioCSV();
@@ -35,7 +35,7 @@ namespace Alura.ListaLeitura.App.Logica
             return context.Response.WriteAsync($"Título {livro.Titulo}\nAutor {livro.Autor}");
         }
 
-        public static Task LivrosParaLer(HttpContext context)
+        public static Task ParaLer(HttpContext context)
         {
 
             var _repo = new LivroRepositorioCSV();
@@ -43,19 +43,24 @@ namespace Alura.ListaLeitura.App.Logica
 
         }
 
-        public static Task LivrosLendo(HttpContext context)
+        public static Task Lendo(HttpContext context)
         {
             var _repo = new LivroRepositorioCSV();
             return context.Response.WriteAsync(_repo.Lendo.ToString());
 
         }
 
-        public static Task LivrosLidos(HttpContext context)
+        public static Task Lidos(HttpContext context)
         {
 
             var _repo = new LivroRepositorioCSV();
             return context.Response.WriteAsync(_repo.Lidos.ToString());
 
+        }
+
+        public string Teste()
+        {
+            return "Nova funcionalidade implementada!";
         }
     }
 }
