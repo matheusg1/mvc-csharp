@@ -13,19 +13,17 @@ using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App.Logica
 {
-    public class LivrosController
+    public class LivrosController : Controller
     {
+        public IEnumerable<Livro> Livros { get; set; }
+        /*
         private static string CarregaLista(IEnumerable<Livro> livros)
         {
             var conteudoArquivo = HtmlUtils.CarregaArquivoHtml("lista");
-            foreach (var livro in livros)
-            {
-                conteudoArquivo = conteudoArquivo
-                    .Replace("#NOVO-ITEM#", $"<li>{livro.Titulo} - {livro.Autor}</li>#NOVO-ITEM#");
-            }
+
             return conteudoArquivo.Replace("#NOVO-ITEM#", "");
 
-        }
+        }*/
 
         public string Detalhes(int id)
         {
@@ -39,24 +37,25 @@ namespace Alura.ListaLeitura.App.Logica
         {
 
             var _repo = new LivroRepositorioCSV();
-            var html = new ViewResult { ViewName = "lista" };
-            return html;
+
+            ViewBag.Livros = _repo.ParaLer.Livros;
+            return View("lista");
 
         }
 
-        public static Task Lendo(HttpContext context)
+        public IActionResult Lendo()
         {
             var _repo = new LivroRepositorioCSV();
-            return context.Response.WriteAsync(_repo.Lendo.ToString());
+            ViewBag.Livros = _repo.Lendo.Livros;
+            return View("lista");
 
         }
 
-        public static Task Lidos(HttpContext context)
+        public IActionResult Lidos()
         {
-
             var _repo = new LivroRepositorioCSV();
-            return context.Response.WriteAsync(_repo.Lidos.ToString());
-
+            ViewBag.Livros = _repo.Lidos.Livros;
+            return View("lista");
         }
 
         public string Teste()

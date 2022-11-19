@@ -15,6 +15,11 @@ C:\Users\matheus.silva\Documents\ProjetosPessoais\Alura.ListaLeitura\Alura.Lista
 C:\Users\matheus.silva\Documents\ProjetosPessoais\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\HTML\lendo.html
 C:\Users\matheus.silva\Documents\ProjetosPessoais\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\HTML\lido.html
 C:\Users\matheus.silva\Documents\ProjetosPessoais\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\HTML\para-ler.html
+C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\Cadastro\formulario.cshtml
+C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\lendo.html
+C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\lido.html
+C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\Livros\lista.cshtml
+C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\para-ler.html
 C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.deps.json
 C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.runtimeconfig.json
 C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.runtimeconfig.dev.json
@@ -28,8 +33,3 @@ C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaL
 C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.dll
 C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.pdb
 C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.genruntimeconfig.cache
-C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\lendo.html
-C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\lido.html
-C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\para-ler.html
-C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\Cadastro\formulario.cshtml
-C:\CSharp\mvc-csharp\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.0\Views\Livros\lista.cshtml
