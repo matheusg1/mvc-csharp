@@ -2,6 +2,7 @@
 using Alura.ListaLeitura.App.Negocio;
 using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using System;
 using System.Collections.Generic;
@@ -34,11 +35,12 @@ namespace Alura.ListaLeitura.App.Logica
             return livro.Detalhes();
         }
 
-        public static Task ParaLer(HttpContext context)
+        public IActionResult ParaLer()
         {
 
             var _repo = new LivroRepositorioCSV();
-            return context.Response.WriteAsync(_repo.ParaLer.ToString());
+            var html = new ViewResult { ViewName = "lista" };
+            return html;
 
         }
 

@@ -9,8 +9,9 @@ namespace Alura.ListaLeitura.App.HTML
     {
         public static string CarregaArquivoHtml(string nomeArquivo)
         {
-            var nomeCompletoArquivo = $@"C:\Users\matheus.silva\Documents\ProjetosPessoais\Alura.ListaLeitura\Alura.ListaLeitura.App\HTML\{nomeArquivo}.html";
-
+            //var nomeCompletoArquivo = $@"C:\Users\matheus.silva\Documents\ProjetosPessoais\Alura.ListaLeitura\Alura.ListaLeitura.App\HTML\{nomeArquivo}.html";
+            var nomeCompletoArquivo = $@"C:\CSharp\Alura.ListaLeitura\Alura.ListaLeitura.App\HTML\{nomeArquivo}.html";
+            
             using (var arquivo = File.OpenText(nomeCompletoArquivo))
             {
                 return arquivo.ReadToEnd();
